@@ -185,6 +185,8 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
 .hero-left-sec h1{
     font-size: 90px;
     font-weight: 600 !important;
@@ -963,6 +965,33 @@ padding-inline: 15px;
     text-align: center;
     display: flex;
     justify-content: center;
+
+}
+
+.my-carousel .col{
+  position: relative;
+ 
+}
+
+.video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Circular shape */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.my-carousel .col:hover .video-icon {
+  transform: translate(-50%, -50%) scale(1.2); /* Slight zoom effect */
 }
 
 .my-carousel .owl-nav .owl-prev,
@@ -1018,7 +1047,13 @@ padding-inline: 15px;
   width: 28px;
   height: 29px;
 
+
 }
+
+/* .video-icon {
+  width: 40px;
+    height: 0px;
+} */
 }
 
 /* =============================================section-5-END=================== */
